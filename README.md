@@ -26,7 +26,7 @@ C.js -> ... -> A.js
 Code:
 
 ``` js
-var transfer = require("multi-stage-sourcemap");
+var transfer = require("multi-stage-sourcemap").transfer;
 var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap})
 ```
 
@@ -38,7 +38,6 @@ var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap})
 - `toSourceMap` : String - rawSourceMap
 
 rawSourceMap is like below object.
-
 ``` js
 var rawSourceMap = {
   version: 3,
