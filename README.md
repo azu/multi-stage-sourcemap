@@ -34,8 +34,8 @@ var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap})
 
 ### transfer
 
-`fromSourceMap` : String - rawSourceMap
-`toSourceMap` : String - rawSourceMap
+- `fromSourceMap` : String - rawSourceMap
+- `toSourceMap` : String - rawSourceMap
 
 rawSourceMap is like below object.
 
