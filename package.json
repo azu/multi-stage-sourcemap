@@ -3,6 +3,7 @@
   "description": "multi-level sourcemap",
   "version": "0.1.0",
   "homepage": "https://github.com/azu/multi-stage-sourcemap/",
+  "keywords": ["sourcemap","source-map"],
   "repository": {
     "type": "git",
     "url": "https://github.com/azu/multi-stage-sourcemap.git"
