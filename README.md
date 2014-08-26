@@ -54,7 +54,7 @@ var rawSourceMap = {
 };
 ```
 
-* [mozilla/source-map](https://github.com/mozilla/source-map/#sourcemapconsumer "mozilla/source-map")
+For details, please see [mozilla/source-map](https://github.com/mozilla/source-map/#sourcemapconsumer "mozilla/source-map").
 
 ## Contributing
 
