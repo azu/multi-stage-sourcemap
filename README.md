@@ -32,12 +32,17 @@ var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap})
 
 ## Usage
 
-### transfer
+### `transfer`
+
+Return the re-mapped `rawSourceMap` string.
+
+The only argument is an object with the following properties:
 
 - `fromSourceMap` : String - rawSourceMap
 - `toSourceMap` : String - rawSourceMap
 
-rawSourceMap is like below object.
+`rawSourceMap` is like below object.
+
 ``` js
 var rawSourceMap = {
   version: 3,
