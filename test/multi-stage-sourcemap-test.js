@@ -46,7 +46,7 @@ describe("multi-stage-sourcemap", function () {
             line: 4,
             column: 4
         });
-        assert(originalPosition.source === 'original.js');
+        assert(originalPosition.source === '/path/to/root/original.js');
         assert(originalPosition.line === 1);
         assert(originalPosition.column === 0);
     });
