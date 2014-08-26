@@ -1,6 +1,6 @@
 # multi-stage-sourcemap 
 
-multi-level source map 
+This library provide re-mapping function for multi-level sourcemap.
 
 ## Installation
 
