@@ -10,15 +10,39 @@ npm install multi-stage-sourcemap
 
 ## Concept
 
-Example Process
+### Basic SourceMap
+
+)well-know )basic sourcemap is no problem.
+
+![basic-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
+
+### Multi-level SourceMap
+
+Multi-level SourceMap has a problem.
+
+[Source Map Revision 3 Proposal](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit# "Source Map Revision 3 Proposal - Google ドキュメント") doens't provide the way of mapping `Minified Code ` to `Original Code` in the following figure.
+
+![multiple-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
+
+Example: 
 
 ```
 A.js -> B.js     -> C.js
         B.js.map -> C.js.map
 ```
 
+We can't see from C.js to A.js.
+
+### [multi-stage-sourcemap](https://github.com/azu/multi-stage-sourcemap "azu/multi-stage-sourcemap") <= THIS LIBRARY
+
 `multi-stage-sourcemap` can mapping `C.js` to `A.js`
- 
+
+![multiple-stage-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-stage-sourcemap.png)
+
+> The easy but lossy way is to ignore the intermediate steps in the process for the purposes of debugging, the source location information from the translation is either ignored (the intermediate translation is considered the “Original Source”) or the source location information is carried through (the intermediate translation hidden).  -- [Source Map Revision 3 Proposal ](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit# "Source Map Revision 3 Proposal - Google ドキュメント")
+
+`multi-stage-sourcemap` does that!
+
 ```
 C.js -> ... -> A.js
 ```
@@ -27,7 +51,7 @@ Code:
 
 ``` js
 var transfer = require("multi-stage-sourcemap").transfer;
-var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap})
+var cToAMap = transfer({fromSourceMap: cMap, toSourceMap: bMap};
 ```
 
 ## Usage
