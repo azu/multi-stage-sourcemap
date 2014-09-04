@@ -12,7 +12,7 @@ npm install multi-stage-sourcemap
 
 ### Basic SourceMap
 
-)well-know )basic sourcemap is no problem.
+well-know basic sourcemap is no problem.
 
 ![basic-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/basic-sourcemap.png)
 
