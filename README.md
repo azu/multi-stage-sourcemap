@@ -1,4 +1,4 @@
-# multi-stage-sourcemap 
+# multi-stage-sourcemap
 
 This library provide re-mapping function for multi-level sourcemap.
 
@@ -24,7 +24,7 @@ Multi-level SourceMap has a problem.
 
 ![multiple-sourcemap.png](http://efcl.info/wp-content/uploads/2014/09/multiple-sourcemap.png)
 
-Example: 
+Example:
 
 ```
 A.js -> B.js     -> C.js
@@ -65,7 +65,7 @@ The only argument is an object with the following properties:
 - `fromSourceMap` : String - rawSourceMap
 - `toSourceMap` : String - rawSourceMap
 
-`rawSourceMap` is like below object.
+`rawSourceMap` is like below `JSON.stringify(object)`.
 
 ``` js
 var rawSourceMap = {
