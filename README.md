@@ -73,12 +73,29 @@ var rawSourceMap = {
   file: 'min.js',
   names: ['bar', 'baz', 'n'],
   sources: ['one.js', 'two.js'],
-  sourceRoot: 'http://example.com/www/js/',
+  sourceRoot: 'http://exammuple.com/www/js/',
   mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
 };
 ```
 
 For details, please see [mozilla/source-map](https://github.com/mozilla/source-map/#sourcemapconsumer "mozilla/source-map").
+
+## Use Case
+
+- [AltJS][] -> JavaScript -> minify
+- [AltJS][] -> JavaScript -> [power-assert][]
+  - [power-assert][] supports multi-level sourcemaps using this module.
+  - [twada/battlefield-sourcemaps](https://github.com/twada/battlefield-sourcemaps "twada/battlefield-sourcemaps")
+  - [power-assert 多段 SourceMap 対応の方針](https://gist.github.com/twada/103d34a3237cecd463a6 "power-assert 多段 SourceMap 対応の方針")
+
+etc...
+
+AltJS is languages that compile to JS.
+(It's contain ES6 with [Traceur](https://github.com/google/traceur-compiler "Traceur"). )
+
+
+[AltJS]: https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS  "List of languages that compile to JS · jashkenas/coffeescript Wiki"
+[power-assert]: https://github.com/twada/power-assert  "twada/power-assert"
 
 ## Contributing
 
