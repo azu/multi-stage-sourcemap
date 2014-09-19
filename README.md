@@ -62,8 +62,8 @@ Return the re-mapped `rawSourceMap` string.
 
 The only argument is an object with the following properties:
 
-- `fromSourceMap` : String - JSON.stringify(rawSourceMap)
-- `toSourceMap` : String - JSON.stringify(rawSourceMap)
+- `fromSourceMap` : Object - rawSourceMap or String - JSON.stringify(rawSourceMap)
+- `toSourceMap` : Object - rawSourceMap or String - JSON.stringify(rawSourceMap)
 
 `rawSourceMap` is like below object.
 
