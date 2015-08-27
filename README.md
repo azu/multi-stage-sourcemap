@@ -97,6 +97,10 @@ AltJS is languages that compile to JS.
 [AltJS]: https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS  "List of languages that compile to JS · jashkenas/coffeescript Wiki"
 [power-assert]: https://github.com/twada/power-assert  "twada/power-assert"
 
+## Related library
+
+- [Rich-Harris/sorcery](https://github.com/Rich-Harris/sorcery "Rich-Harris/sorcery")
+
 ## Contributing
 
 1. Fork it!
