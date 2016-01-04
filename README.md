@@ -1,4 +1,4 @@
-# multi-stage-sourcemap
+# multi-stage-sourcemap [![Build Status](https://travis-ci.org/azu/multi-stage-sourcemap.svg?branch=master)](https://travis-ci.org/azu/multi-stage-sourcemap)
 
 This library provide re-mapping function for multi-level sourcemap.
 
