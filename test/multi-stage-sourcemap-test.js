@@ -20,6 +20,7 @@ describe("multi-stage-sourcemap", function () {
                 generated: { line: 2, column: 2 },
                 name: 'foo'
             });
+            gen.setSourceContent('original.js', 'alert("Hello World");');
             return gen.toString();
         })();
         // middle -> last
@@ -46,8 +47,12 @@ describe("multi-stage-sourcemap", function () {
             line: 4,
             column: 4
         });
-        assert(originalPosition.source === '/path/to/root/original.js');
-        assert(originalPosition.line === 1);
-        assert(originalPosition.column === 0);
+        assert.equal(originalPosition.source, '/path/to/root/original.js');
+        assert.equal(originalPosition.line, 1);
+        assert.equal(originalPosition.column, 0);
+        assert.equal(
+            resultSMC.sourceContentFor(originalPosition.source),
+            'alert(\"Hello World\");'
+        );
     });
 });
