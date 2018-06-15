@@ -1,7 +1,7 @@
 {
   "name": "multi-stage-sourcemap",
   "description": "multi-level sourcemap",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/azu/multi-stage-sourcemap/",
   "keywords": [
     "sourcemap",
