@@ -12,6 +12,10 @@
     "url": "https://github.com/azu/multi-stage-sourcemap.git"
   },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "test": "mocha test/*.js"
   },
